@@ -4,12 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
     <title>Education Application</title>
   </head>
   <body>
     <main>
-        <h1>Welcome to Website of Education Application</h1>  
-        <p>This is my new website which is hosted on GitHub Pages!</p>
+        <div class="container my-5">
+            <div class="px-4 py-5 my-5 text-center rounded-3 border shadow-lg">
+                <h1 class="display-5 fw-bold text-body-emphasis">Education Application</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead fw-bold">Desktopowa aplikacja do nauki matematyki i języka angielskiego.</p>
+                </div>
+                <img src="img/app.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                <div class="col-lg-10 mx-auto"></div>
+                  <p class="lead">Uruchomiona aplikacja wyświetla w określonych odstępach czasu na ekranie losowe 10 zadań z matematyki lub z języka angielskiego. Zadania są przechowywane w lokalnej bazie danych. Prawdopodobieństwo wylosowania danego typu zadania zależy od skuteczności użytkownika na tym zadaniu (trudniejsze dla użytkownika zadania pojawiają się częściej) oraz całkowitej liczby wystąpień tego zadania (zadania, które losowane były rzadziej mają większe prawdopodobieństwo wylosowania). Dodatkowo co tydzień wysyłany jest wiadomość e-mail zawierająca tygodniową oraz całkowitą skuteczność użytkownika na zadaniach. Jedynym sposobem zamknięcia aplikacji jest poprawne wykonanie określonej liczby zadań. W przeciwnym wypadku generowane są nowe zadania.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="container my-5">
+          <div class="px-4 py-5 my-5 rounded-3 border shadow-lg">
+              <h2 class="display-8 fw-bold text-body-emphasis">Prawdopodobieństwo wylosowania zadania</h1>
+              <div class="col-lg-10 mx-auto justify-content-center">
+              <p class="lead">Prawdopodobieństwo wylosowania każdego rodzaju zadania wyznaczane jest na podstawie poniższych reguł:</p>
+              <ol>
+                <li>Dla każdego zadania obliczana jest wartość <i>prob</i> będąca różnicą pomiędzy całkowitą liczbą wystąpień tego zadania i liczbą poprawnych odpowiedzi użytkownika na to zadanie</li>
+                <li>Dla każdego zadania do wartości <i>prob</i> dodawana jest różnica całktowitej liczby wystąpień wszystkich zadań oraz całkowitej liczby rozwiązań tego zadania</li>
+                <li>Dla każdego zadania wartość <i>prob</i> jest normalizowana poprzez podzielenie przez sumę wartości <i>prob</i> dla wszystkich zadań. W ten sposóv wyznaczane jest prawdopodobieństwo wylosowanie tego zadania</li>
+              </ol>
+              </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="container my-5">
+          <div class="px-4 py-5 my-5 rounded-3 border shadow-lg">
+              <h2 class="display-8 fw-bold text-body-emphasis">Wysyłanie maili</h1>
+              <div class="col-lg-10 mx-auto justify-content-center">
+                <p class="lead">Aby skonfigurować wysyłanie maila z raportem należy wykonać poniższe kroki (2023):</p>
+                <ol>
+                  <li>(opcjonalne) Założyć nowe konto Google</li>
+                  <li>Włączyć Weryfikację Dwuetapową - Zarządzaj kontem Google -> Bezpieczeństwo -> Weryfikacja dwuetapowa</li>
+                  <li>Wejść na stronę <a href="https://myaccount.google.com/u/0/apppasswords">https://myaccount.google.com/u/0/apppasswords</a></li>
+                  <li>Dodać nową aplikację i zapisać 16-literowe hasło</li>
+                  <li>Otworzyć plik credentials_template i wypełnić pola:
+                    <ul>
+                      <li>EMAIL_SENDER: własny adres e-mail lub adres e-mail stworzony w punkcie 1.</li>
+                      <li>EMAIL_PASSWORD: 16-literowe hasło z punktu 4.</li>
+                      <li>EMAIL_RECEIVER: adres e-mail, na który ma być wysyłany tygodniowy raport</li>
+                      <li>USERNAME: nazwa użytkownika rozwiązującego zadania</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="container my-5">
+          <div class="px-4 py-5 my-5 rounded-3 border shadow-lg">
+              <h2 class="display-8 fw-bold text-body-emphasis">Konfiguracja</h1>
+              <div class="col-lg-10 mx-auto justify-content-center">
+              <p class="lead">Modyfikując pola w pliku properties można zmienić następujące parametry aplikacji:</p>
+              <ul>
+                <li>DELAY: odstęp czasowy (w sekundach) między kolejnymi wyświetleniami zadań</li>
+                <li>ADD_RANGE: zakres liczbowy dla zadań z dodawaniem w formacie MIN,MAX</li>
+                <li>SUB_RANGE: zakres liczbowy dla zadań z odejmowaniem w formacie MIN,MAX</li>
+                <li>MUL_RANGE: zakres liczbowy dla zadań z mnożeniem w formacie MIN,MAX</li>
+                <li>DIV_RANGE: zakres liczbowy dla zadań z dzieleniem w formacie MIN,MAX</li>
+                <li>THRESHOLD: liczba zadań, które należy wykonać poprawnie, żeby móc zamknąć aplikację. Liczba ta musi zawierać się w przedziale od 0 do 10</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+
     </main>
   </body>
 </html>
