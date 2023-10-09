@@ -32,35 +32,37 @@
             <div class="px-4 py-5 my-5 rounded-3 border shadow-lg">
                 <h2 class="display-8 fw-bold text-body-emphasis">Uruchomienie i konfiguracja</h1>
                 <div class="col-lg-10 mx-auto justify-content-center">
-                <p>Projekt udostępnia środowisko do symulacji ruchów Browna na podstawie ich matematycznego modelu (Cykl Wienera) oraz modelu fizycznego (zderzeń międzycząsteczkowych). Żeby uruchomić program należy posiadać interpreter Python (najlepiej w wersji 3.10) oraz mieć zainstalowane pakiety z pliku requirements.txt. Następnie w konsoli należy wpisać komendę:</p>
-                <p class="code">python main.py</p>
-                <p>Po uruchomienie wyświetli się interfejs, w którym można dostrajać wiele elementów symulacji:</p>
-                <img src="img/interface.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-                <p>Najpierw należy określić, czy ruch cząsteczek ma się odbywać na podstawie modelu matematycznego (opcja „Cykl Wienera”) czy fizycznego (opcja „Odbijanie cząsteczek”). Nie można wybrać obu opcji naraz. Następnie należy zdecydować, czy każda cząsteczka na zostawiać za sobą ślad (opcja „Czy chcesz rysować drogę odbijanych cząsteczek) oraz czy cząsteczki cieczy/gazu mają być widoczne (opcja „Czy chcesz żeby cząsteczki cieczy były widoczne”). Nie zaleca się aby obu tych opcji używać naraz, ponieważ rysowanie ścieżki cząsteczek cieczy/gazu, ze względu na ich liczbę, całkowicie zamaże ścieżkę badanej cząsteczki.
-                Po tym, zależnie od wybranego modelu należy uzupełnić dane pola:</p>
-                <ul>
-                    <li>Proces Wienera:
-                        <ul>
-                            <li>liczba cząsteczek odbijanych</li>
-                            <li>promień cząsteczek odbijanych</li>
-                        </ul>
-                        Reszta pól jest ignorowana
-                    </li>
-                    <li>Odbijanie cząsteczek:
-                        <ul>
-                            <li>temperatura cząsteczek</li>
-                            <li>liczba cząsteczek cieczy/gazu</li>
-                            <li>promień cząsteczek cieczy/gazy</li>
-                            <li>masa atomowa cząsteczek cieczy/gazu</li>
-                            <li>masa atomowa cząsteczek cieczy/gazu</li>
-                            <li>liczba cząsteczek odbijanych</li>
-                            <li>promień cząsteczek odbijanych</li>
-                            <li>masa atomowa cząsteczek odbijanych</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p>Następnie, po naciśnięciu przycisku „Start” powinna rozpocząć się symulacja. Białe cząsteczki to cząsteczki obijane (te, które pokazują ruchy Browna), a niebieskie cząsteczki to cząsteczki cieczy/gazu.
-                    Klikając lewym przyciskiem myszy w dowolne miejsce w symulacji dodajemy do niej nową cząsteczkę odbijaną (białą). Klikając prawym przyciskiem myszy (o ile nie jesteśmy w trybie Cykl Wienera) dodajemy do symulacji cząsteczkę cieczy/gazu (widoczną lub nie). Klikając klawisz „ESC” lub zamykając okno – wracamy z powrotem do interfejsu, w którym możemy zmienić parametry i ponownie uruchomić symuację.</p>
+                  <p>Projekt udostępnia środowisko do symulacji ruchów Browna na podstawie ich matematycznego modelu (Cykl Wienera) oraz modelu fizycznego (zderzeń międzycząsteczkowych). Żeby uruchomić program należy posiadać interpreter Python (najlepiej w wersji 3.10) oraz mieć zainstalowane pakiety z pliku requirements.txt. Następnie w konsoli należy wpisać komendę:</p>
+                  <p class="code">python main.py</p>
+                  <p>Po uruchomienie wyświetli się interfejs, w którym można dostrajać wiele elementów symulacji:</p>
+                  <div class="text-center mx-auto">
+                    <img src="img/interface.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                  </div>
+                  <p>Najpierw należy określić, czy ruch cząsteczek ma się odbywać na podstawie modelu matematycznego (opcja „Cykl Wienera”) czy fizycznego (opcja „Odbijanie cząsteczek”). Nie można wybrać obu opcji naraz. Następnie należy zdecydować, czy każda cząsteczka na zostawiać za sobą ślad (opcja „Czy chcesz rysować drogę odbijanych cząsteczek) oraz czy cząsteczki cieczy/gazu mają być widoczne (opcja „Czy chcesz żeby cząsteczki cieczy były widoczne”). Nie zaleca się aby obu tych opcji używać naraz, ponieważ rysowanie ścieżki cząsteczek cieczy/gazu, ze względu na ich liczbę, całkowicie zamaże ścieżkę badanej cząsteczki.
+                  Po tym, zależnie od wybranego modelu należy uzupełnić dane pola:</p>
+                  <ul>
+                      <li>Proces Wienera:
+                          <ul>
+                              <li>liczba cząsteczek odbijanych</li>
+                              <li>promień cząsteczek odbijanych</li>
+                          </ul>
+                          Reszta pól jest ignorowana
+                      </li>
+                      <li>Odbijanie cząsteczek:
+                          <ul>
+                              <li>temperatura cząsteczek</li>
+                              <li>liczba cząsteczek cieczy/gazu</li>
+                              <li>promień cząsteczek cieczy/gazy</li>
+                              <li>masa atomowa cząsteczek cieczy/gazu</li>
+                              <li>masa atomowa cząsteczek cieczy/gazu</li>
+                              <li>liczba cząsteczek odbijanych</li>
+                              <li>promień cząsteczek odbijanych</li>
+                              <li>masa atomowa cząsteczek odbijanych</li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <p>Następnie, po naciśnięciu przycisku „Start” powinna rozpocząć się symulacja. Białe cząsteczki to cząsteczki obijane (te, które pokazują ruchy Browna), a niebieskie cząsteczki to cząsteczki cieczy/gazu.
+                      Klikając lewym przyciskiem myszy w dowolne miejsce w symulacji dodajemy do niej nową cząsteczkę odbijaną (białą). Klikając prawym przyciskiem myszy (o ile nie jesteśmy w trybie Cykl Wienera) dodajemy do symulacji cząsteczkę cieczy/gazu (widoczną lub nie). Klikając klawisz „ESC” lub zamykając okno – wracamy z powrotem do interfejsu, w którym możemy zmienić parametry i ponownie uruchomić symuację.</p>
                 </div>
             </div>
         </div>
