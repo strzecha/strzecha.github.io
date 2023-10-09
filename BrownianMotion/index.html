@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Brownian Motion SImulation</title>
+  </head>
+  <body>
+    <main>
+        <div class="container my-5">
+            <div class="px-4 py-5 my-5 text-center rounded-3 border shadow-lg">
+                <h1 class="display-5 fw-bold text-body-emphasis">Brownian Motion SImulation</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead fw-bold">Fizyczna symulacja ruchów Browna oraz Cyklu Wienera</p>
+                </div>
+                <img src="img/simulation.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                <div class="col-lg-10 mx-auto"></div>
+                  <p class="lead">Korzystając z aplikacji można uruchomić symulację Ruchów Browna oraz Cyklu Wienera, a także zdefiniować parametry tych symulacji.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="container my-5">
+            <div class="px-4 py-5 my-5 rounded-3 border shadow-lg">
+                <h2 class="display-8 fw-bold text-body-emphasis">Uruchomienie i konfiguracja</h1>
+                <div class="col-lg-10 mx-auto justify-content-center">
+                <p>Projekt udostępnia środowisko do symulacji ruchów Browna na podstawie ich matematycznego modelu (Cykl Wienera) oraz modelu fizycznego (zderzeń międzycząsteczkowych). Żeby uruchomić program należy posiadać interpreter Python (najlepiej w wersji 3.10) oraz mieć zainstalowane pakiety z pliku requirements.txt. Następnie w konsoli należy wpisać komendę:</p>
+                <p class="code">python main.py</p>
+                <p>Po uruchomienie wyświetli się interfejs, w którym można dostrajać wiele elementów symulacji:</p>
+                <img src="img/interface.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                <p>Najpierw należy określić, czy ruch cząsteczek ma się odbywać na podstawie modelu matematycznego (opcja „Cykl Wienera”) czy fizycznego (opcja „Odbijanie cząsteczek”). Nie można wybrać obu opcji naraz. Następnie należy zdecydować, czy każda cząsteczka na zostawiać za sobą ślad (opcja „Czy chcesz rysować drogę odbijanych cząsteczek) oraz czy cząsteczki cieczy/gazu mają być widoczne (opcja „Czy chcesz żeby cząsteczki cieczy były widoczne”). Nie zaleca się aby obu tych opcji używać naraz, ponieważ rysowanie ścieżki cząsteczek cieczy/gazu, ze względu na ich liczbę, całkowicie zamaże ścieżkę badanej cząsteczki.
+                Po tym, zależnie od wybranego modelu należy uzupełnić dane pola:</p>
+                <ul>
+                    <li>Proces Wienera:
+                        <ul>
+                            <li>liczba cząsteczek odbijanych</li>
+                            <li>promień cząsteczek odbijanych</li>
+                        </ul>
+                        Reszta pól jest ignorowana
+                    </li>
+                    <li>Odbijanie cząsteczek:
+                        <ul>
+                            <li>temperatura cząsteczek</li>
+                            <li>liczba cząsteczek cieczy/gazu</li>
+                            <li>promień cząsteczek cieczy/gazy</li>
+                            <li>masa atomowa cząsteczek cieczy/gazu</li>
+                            <li>masa atomowa cząsteczek cieczy/gazu</li>
+                            <li>liczba cząsteczek odbijanych</li>
+                            <li>promień cząsteczek odbijanych</li>
+                            <li>masa atomowa cząsteczek odbijanych</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Następnie, po naciśnięciu przycisku „Start” powinna rozpocząć się symulacja. Białe cząsteczki to cząsteczki obijane (te, które pokazują ruchy Browna), a niebieskie cząsteczki to cząsteczki cieczy/gazu.
+                    Klikając lewym przyciskiem myszy w dowolne miejsce w symulacji dodajemy do niej nową cząsteczkę odbijaną (białą). Klikając prawym przyciskiem myszy (o ile nie jesteśmy w trybie Cykl Wienera) dodajemy do symulacji cząsteczkę cieczy/gazu (widoczną lub nie). Klikając klawisz „ESC” lub zamykając okno – wracamy z powrotem do interfejsu, w którym możemy zmienić parametry i ponownie uruchomić symuację.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="container my-5">
+          <div class="px-4 py-5 my-5 rounded-3 border shadow-lg">
+              <h2 class="display-8 fw-bold text-body-emphasis">Teoria - Ruchy Browna</h1>
+              <div class="col-lg-10 mx-auto justify-content-center">
+                <p>Ruch polegający na dygotaniu i trzęsieniu się, który odbywają drobne, w silnym powiększeniu jeszcze widzialne cząstki, znajdujące się w stanie zawieszenia w cieczach. Ruchy Browna mogą być obserwowane również w przypadku cząstek zawieszonych w gazach.</p>
+                <p>Zjawisko to jako pierwszy opisał Jan Ingenhousz, który zaobserwował nieregularne ruchy cząsteczek pyłu węglowego na powierzchni alkoholu. Swoją nazwę zawdzięcza botanikowi Robertowi Brownowi, który obserwował pod mikroskopem zachowanie pyłków roślinnych w wodzie. Drobiny widoczne pod mikroskopem wykonywały nieregularne, zygzakowate ruchy. Brown obserwował takie zachowanie również w przypadku materii nieorganicznej, co obalało tezę o występowaniu tajemniczej „siły życiowej”. Zjawisko ruchów Browna zdawało się przeczyć zasadzie zachowania energii, gdyż ruch ten był niezmienny, niezależnie od tego jak długo trwał.</p>
+                <p>Eksperymenty prowadzone w kolejnych latach pozwoliły wykluczyć jako potencjalną przyczynę ruchów Browna następujące czynniki:</p>
+                <ul>
+                    <li>obecność prądów w cieczy,</li>
+                    <li>konwekcję,</li>
+                    <li>skład chemiczny rozpuszczalnika,</li>
+                    <li>kształt naczynia,</li>
+                    <li>pole elektryczne lub magnetyczne.</li>
+                </ul>
+                <p>Zaobserwowane zależności dotyczyły związku zjawiska z temperaturą i wielkością zawieszonych cząsteczek. Wyjaśnienie ruchów Browna nastąpiło dopiero w pracach opublikowanych przez Alberta Einsteina i Mariana Smoluchowskiego. Teorie te zostały zweryfikowane doświadczalnie przez Theodora Svedberga i przez Jean Baptiste Perrina.</p>
+              </div>
+            </div>
+        </div>
+
+    </main>
+  </body>
+</html>
