@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['calculate_5faccuracy_0',['calculate_accuracy',['../classapplication_1_1app_1_1_app.html#a7eac5306ef19ba2ec5f7073bc8458a82',1,'application::app::App']]],
+  ['calculate_5ftotal_5faccuracy_1',['calculate_total_accuracy',['../classapplication_1_1app_1_1_app.html#a6bc3eaaca7b838cc7924cb214b691142',1,'application::app::App']]],
+  ['check_2',['check',['../classtask_1_1_task.html#a75b5529d9ce9defb4eb4c1ef5e4c9405',1,'task::Task']]],
+  ['check_5fanswers_3',['check_answers',['../classapplication_1_1app_1_1_app.html#a1016b276e723ea338ff747812bb7c57a',1,'application.app.App.check_answers'],['../classapplication_1_1app_1_1_app.html#a26c8e8a300ecc01fa557c22d0a1824f8',1,'application.app.App.check_answers(self)']]],
+  ['check_5fbutton_4',['check_button',['../classapplication_1_1app_1_1_app.html#aa32343f3e4b421e8a57e237c784cc8a5',1,'application::app::App']]],
+  ['check_5fproperties_5',['check_properties',['../namespaceutils_1_1data__reader.html#abacba85b7b03af319f4b61fc3a6718ff',1,'utils::data_reader']]],
+  ['click_6',['click',['../classgui_1_1button_1_1_button.html#ab2d8dd5a9d04881c1ec20516d8d1f6cf',1,'gui.button.Button.click()'],['../classgui_1_1text__input_1_1_input_text.html#affb6832dcd9e3ed391040ae0a2e421aa',1,'gui.text_input.InputText.click()']]],
+  ['close_7',['close',['../classutils_1_1database_1_1_task_database.html#a9dbc8789a0eb3ebab644da16dc2fd6df',1,'utils::database::TaskDatabase']]],
+  ['color_8',['color',['../classgui_1_1button_1_1_button.html#a669d147b602c63ea6fa58be329fd0e11',1,'gui.button.Button.color'],['../classgui_1_1text_1_1_text.html#ae083b607138e54e104819468cd99d569',1,'gui.text.Text.color']]],
+  ['connect_9',['connect',['../namespacetests_1_1test__database.html#a932f629a01b3aa78e97f6b30b8144164',1,'tests::test_database']]],
+  ['connection_10',['connection',['../classutils_1_1database_1_1_task_database.html#a8c8d375c934459ae6b5b171e3ab2c0ae',1,'utils::database::TaskDatabase']]],
+  ['correct_5fnum_11',['correct_num',['../classtask_1_1_task.html#aaf73a37d2fdb77706f1134064dbf7edf',1,'task::Task']]],
+  ['count_5ftotal_5fcorrect_12',['count_total_correct',['../classutils_1_1database_1_1_task_database.html#ae485b647a24f9b896c54459c7b28245d',1,'utils::database::TaskDatabase']]],
+  ['count_5ftotal_5foccurs_13',['count_total_occurs',['../classutils_1_1database_1_1_task_database.html#adf9bb91d1a87d4318252281ad751202a',1,'utils::database::TaskDatabase']]],
+  ['create_5fconnection_14',['create_connection',['../classutils_1_1database_1_1_task_database.html#ac3f55c0331724db20c23e91aa8834193',1,'utils::database::TaskDatabase']]],
+  ['create_5fdatabase_15',['create_database',['../namespaceutils_1_1database.html#a16d2e267eb60f871a59a45e339b54bd5',1,'utils::database']]],
+  ['create_5flanguage_5ftask_5ftable_16',['create_language_task_table',['../classutils_1_1database_1_1_task_database.html#a06a942ff8683fb4e4248c8d3c29ee7f9',1,'utils::database::TaskDatabase']]],
+  ['create_5fmail_17',['create_mail',['../classutils_1_1mail__sender_1_1_mail_sender.html#aa0907554100496a117ee2b9ec3b4a065',1,'utils::mail_sender::MailSender']]],
+  ['create_5fmath_5ftask_5ftable_18',['create_math_task_table',['../classutils_1_1database_1_1_task_database.html#adb8fec8c8fcdd50fe33688064b23dbc6',1,'utils::database::TaskDatabase']]],
+  ['credentials_19',['credentials',['../namespaceutils_1_1mail__sender.html#ab2e49ba45a0ab97f0b483e144e7ad9fb',1,'utils::mail_sender']]],
+  ['credentials_5ffilename_20',['credentials_filename',['../namespaceutils_1_1mail__sender.html#a82283d19512bb4abf67aaf5e7d79ab65',1,'utils::mail_sender']]]
+];
