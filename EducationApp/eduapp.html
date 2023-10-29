@@ -20,7 +20,7 @@
                 </div>
                 <img src="img/app.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
                 <div class="col-lg-10 mx-auto"></div>
-                  <p class="lead">Uruchomiona aplikacja wyświetla w określonych odstępach czasu na ekranie losowe 10 zadań z matematyki lub z języka angielskiego. Zadania są przechowywane w lokalnej bazie danych. Prawdopodobieństwo wylosowania danego typu zadania zależy od skuteczności użytkownika na tym zadaniu (trudniejsze dla użytkownika zadania pojawiają się częściej) oraz całkowitej liczby wystąpień tego zadania (zadania, które losowane były rzadziej mają większe prawdopodobieństwo wylosowania). Dodatkowo co tydzień wysyłany jest wiadomość e-mail zawierająca tygodniową oraz całkowitą skuteczność użytkownika na zadaniach. Jedynym sposobem zamknięcia aplikacji jest poprawne wykonanie określonej liczby zadań. W przeciwnym wypadku generowane są nowe zadania.</p>
+                  <p class="lead">Uruchomiona aplikacja wyświetla w określonych odstępach czasu na ekranie losowe zadaia z matematyki lub z języka angielskiego. Zadania są przechowywane w lokalnej bazie danych. Prawdopodobieństwo wylosowania danego typu zadania zależy od skuteczności użytkownika na tym zadaniu (trudniejsze dla użytkownika zadania pojawiają się częściej) oraz całkowitej liczby wystąpień tego zadania (zadania, które losowane były rzadziej mają większe prawdopodobieństwo wylosowania). Dodatkowo co tydzień wysyłany jest wiadomość e-mail zawierająca tygodniową oraz całkowitą skuteczność użytkownika na zadaniach. Jedynym sposobem zamknięcia aplikacji jest poprawne wykonanie określonej liczby zadań. W przeciwnym wypadku generowane są nowe zadania.</p>
                 </div>
               </div>
         </div>
@@ -75,11 +75,12 @@
               <p class="lead">Modyfikując pola w pliku properties można zmienić następujące parametry aplikacji:</p>
               <ul>
                 <li>DELAY: odstęp czasowy (w sekundach) między kolejnymi wyświetleniami zadań</li>
+                <li>NUM_TASKS: liczba zadań w jednej serii (od 4 do 45)</li>
                 <li>ADD_RANGE: zakres liczbowy dla zadań z dodawaniem w formacie MIN,MAX</li>
                 <li>SUB_RANGE: zakres liczbowy dla zadań z odejmowaniem w formacie MIN,MAX</li>
                 <li>MUL_RANGE: zakres liczbowy dla zadań z mnożeniem w formacie MIN,MAX</li>
                 <li>DIV_RANGE: zakres liczbowy dla zadań z dzieleniem w formacie MIN,MAX</li>
-                <li>THRESHOLD: liczba zadań, które należy wykonać poprawnie, żeby móc zamknąć aplikację. Liczba ta musi zawierać się w przedziale od 0 do 10</li>
+                <li>THRESHOLD: liczba zadań, które należy wykonać poprawnie, żeby móc zamknąć aplikację (od 0 do NUM_TASKS)</li>
               </ul>
               </div>
             </div>
