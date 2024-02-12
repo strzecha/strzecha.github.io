@@ -1,0 +1,296 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+	min-width: 250px;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+    color: #333;
+}
+
+.bg-nav
+{
+    background-color: rgb(27, 184, 53);
+}
+
+.btn-porches
+{
+    background-color: rgb(27, 184, 53);
+    color: white;
+    font-weight: bold;
+}
+
+.icon-facebook-official
+{
+    font-size: 100px;
+    color: black;
+}
+
+.icon-facebook-official:hover
+{
+    color: rgb(59, 89, 152);
+}
+
+.porches .container p, .about .container p
+{
+    text-align: justify;
+}
+
+footer .container p
+{
+    text-align: center;
+}
+
+.img-middle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: #000000;
+	-webkit-text-fill-color: #67d0ff;
+
+}
+
+.img-shadow
+{
+    -webkit-box-shadow: 25px 25px 0px -2px #67d0ff;
+    -moz-box-shadow: 25px 25px 0px -2px #67d0ff;
+    box-shadow: 25px 25px 0px -2px #67d0ff;
+}
+
+@media (max-width: 576px)
+{
+    .container p
+    {
+        text-align: left;
+    }
+
+    .card-img-overlay > h1
+    {
+        font-size: calc(1rem + 1vw);
+    }
+}
+
+@media (max-width: 992px)
+{
+    .img-shadow
+    {
+        -webkit-box-shadow: 10px 10px 0px -2px #67d0ff;
+        -moz-box-shadow: 10px 10px 0px -2px #67d0ff;
+        box-shadow: 10px 10px 0px -2px #67d0ff;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px)
+{
+    .icon-facebook-official
+    {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 576px)
+{
+    .about img
+    {
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px)
+{
+    .porches .container p.fs-4
+    {
+        font-size: 17px !important;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .porches .container p
+    {
+        font-size: 20px;
+    }
+}
+
+.photo-div2{
+    top: 0%;
+	position: absolute;
+    vertical-align: middle;
+}
+
+.photo-div img
+{
+    width: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+    position: absolute;
+}
+
+.photo-div
+{
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.lightbox-target {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	overflow: hidden;
+	 
+}
+
+.lightbox-target img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom: 0;
+	max-height: 0%;
+	max-width: 0%;
+	border: 0px solid white;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+	box-sizing: border-box;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+a.lightbox-close {
+	display: block;
+	width:50px;
+	height:50px;
+	box-sizing: border-box;
+	background: white;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+a.lightbox-close:before {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: black;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+a.lightbox-close:after {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: black;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+
+.lightbox-target:target {
+	opacity: 1;
+	top: 0px;
+	bottom: 0;
+}
+
+.lightbox-target:target img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+	top: 0px;
+}
+
+#ref
+{
+    position: fixed;
+}
+
+.nav-pills .active
+{
+	background-color: #67d0ff !important;
+}
+
+.nav-pills .nav-link:hover
+{
+	background-color: #a5e3ff !important;
+}
+
+.nav-pills hr
+{
+	margin: 0.1rem 0;
+}
+
+.nav-pills .nav-link
+{
+	color: white;
+}
+
+.card
+{
+	border-radius: 0;
+}
+
+.main-nav-link
+{
+	font-weight: bold;
+}
+
+a.card
+{
+	text-decoration: none;
+}
+
+.card-img-cover
+{
+	overflow: hidden;
+	height: 250px;
+}
+
+.card-img-cover img
+{
+	position: relative;
+	top: calc(-50% + 62px);
+}
+
+.card-text
+{
+	text-align: center !important;
+	color: white;
+	font-weight: bold;
+	font-size: large;
+}
