@@ -7,7 +7,6 @@ h2
 {
     display: inline-block;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 3px solid green;
 }
 
 p, li
@@ -119,5 +118,57 @@ img, iframe
     {
         height: 300px;
     }
+
+    .container-fluid
+    {
+        padding: 0 !important;
+    }
 }
 
+@media (min-width: 768px) and (max-width: 880px){
+    .navbar-brand
+    {
+        display: none;
+    }
+    .collapse
+    {
+        margin-left: auto !important;
+    }
+}
+
+.navbar-brand
+{
+    padding: 5px 10px;
+    background-color: #E0F1FF;
+}
+
+.logo
+{
+    height: 43px;
+    border-radius: 0;
+}
+
+p.contact-p
+{
+    text-align: left !important;
+}
+
+.collapse
+{
+    margin-left: -60px;
+}
+
+.navbar
+{
+    padding: 0;
+}
+
+.container-fluid
+{
+    padding: 5px 0;
+}
+
+.contact-footer
+{
+    padding-left: 20px;
+}

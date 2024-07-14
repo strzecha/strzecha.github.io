@@ -12,27 +12,41 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/blue.css">
     <link rel="icon" href="img/pm3.ico" type="image/ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">            
-            <div class="container-fluid ">
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md navbar-dark bg-blue fixed-top">   
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid logo" src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button> 
+            <div class="container-fluid">         
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                    <a id="nav-description" class="nav-link" href="#description" onclick="scrollToContent(event, 'description')">Beshreibung</a>
+                    <a id="nav-description" class="nav-link" href="#description" onclick="scrollToContent(event, 'description')">Beschreibung</a>
                   </li>
                   <li class="nav-item">
                     <a id="nav-rooms" class="nav-link" href="#rooms" onclick="scrollToContent(event, 'rooms')">Zimmer</a>
                   </li>
                   <li class="nav-item">
                     <a id="nav-wellness" class="nav-link" href="#wellness" onclick="scrollToContent(event, 'wellness')">Wellness</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="nav-meals" class="nav-link" href="#meals" onclick="scrollToContent(event, 'meals')">Frühstücksbüfett</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="nav-beach" class="nav-link" href="#beach" onclick="scrollToContent(event, 'beach')">Strand</a>
                   </li>
                   <li class="nav-item">
                     <a id="nav-location" class="nav-link" href="#location" onclick="scrollToContent(event, 'location')">Lage</a>
@@ -52,10 +66,10 @@
     <main>
         <section>
             <div id="description" class="container mt-5 mb-2">
-                <h2 class="pt-2">Beshreibung</h2>
-                <div class="row bg-light p-md-4 p-3 rounded-3">
+                <h2 class="pt-3 pb-1 shadows-into-light-regular">Beschreibung</h2>
+                <div class="row bg-blue-light p-md-4 p-3 rounded-3">
                     <div class="col-12 text-body justify-content-center">
-                        <img src="img/tulip.jpg" alt="hotel" class="img-fluid float-start me-md-3 mb-3">
+                        <img src="img/tulip2.jpg" alt="hotel" class="img-fluid float-start me-md-3 mb-3">
                     
                         <p>Die Hotelanlage liegt ca. 5 Minuten Fußweg vom Strand entfernt. Ferienwohnung und Studios bieten unseren Gästen genau den Komfort den sie für ihren Aufenthalt wünschen. Wie großzügiger Wohnbereiche, mit seperaten Schlafzimmer, Küchenzeile, Bad, einschließlich mit Balkon.</p>
 
@@ -65,19 +79,19 @@
                     <div class="col-12">
                         <div class="row ">
                             <div class="col-md-4">
-                                <div class="col-12 bg-success-subtle info d-flex align-items-center justify-content-center">
+                                <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
                                     <p><strong>Check-Out</strong> bis 11.00 Uhr</p>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <div class="col-12 bg-success-subtle info d-flex align-items-center justify-content-center">
+                                <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
                                     <p><strong>Check-In</strong> ab 15.00 Uhr</p>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <div class="col-12 bg-success-subtle info d-flex align-items-center justify-content-center">
+                                <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
                                     <p>Hunde können kostenpflichtig mitreisen</p>
                                 </div>
                             </div>
@@ -85,7 +99,7 @@
                     </div>
                     <div class="col-12" style="height: 10px;"></div>
                     <div class="col-12">
-                        <div class="col-12 bg-success-subtle info d-flex align-items-center justify-content-center">
+                        <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
                             <p><strong>E-Mail: </strong>ostseeurlaub-syld-haria-apartments@gmx.net</p>
                         </div>
                     </div>
@@ -96,7 +110,7 @@
 
         <section>
             <div id="rooms" class="container my-2">
-                <h2>Zimmer</h2>
+                <h2 class="shadows-into-light-regular">Zimmer</h2>
                 <div class="row bg-body p-md-4 p-3">
                     <div class="col-md-7 col-lg-8">
                         <div class="row">
@@ -118,8 +132,40 @@
 
         <section>
             <div id="wellness" class="container my-2">
-                <h2>Wellness</h2>
-                <div class="row bg-light p-md-4 p-3">
+                <h2 class="indie-flower-regular">Wellness</h2>
+                <div class="row bg-blue-light p-md-4 p-3">
+                    <div class="col-md-6">
+                        <div class="col-12 info wellness d-flex align-items-center justify-content-center">
+                            <p>Dampf- und Trockensauna, Schwimmbad mit Whirlpool und Entspannungsräume. Billard, Tischtennis und Fitnessraum</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 px-md-5">
+                        <img src="img/wellness.jpg" alt="hotel" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="meals" class="container my-2">
+                <h2 class="indie-flower-regular">Frühstücksbüfett</h2>
+                <div class="row p-md-4 p-3">
+                    <div class="col-md-6 px-md-5">
+                        <img src="img/wellness.jpg" alt="hotel" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-12 info wellness d-flex align-items-center justify-content-center">
+                            <p>Dampf- und Trockensauna, Schwimmbad mit Whirlpool und Entspannungsräume. Billard, Tischtennis und Fitnessraum</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="beach" class="container my-2">
+                <h2 class="indie-flower-regular">Strand</h2>
+                <div class="row bg-blue-light p-md-4 p-3">
                     <div class="col-md-6">
                         <div class="col-12 info wellness d-flex align-items-center justify-content-center">
                             <p>Dampf- und Trockensauna, Schwimmbad mit Whirlpool und Entspannungsräume. Billard, Tischtennis und Fitnessraum</p>
@@ -134,7 +180,7 @@
 
         <section>
             <div id="location" class="container my-2">
-                <h2>Lage</h2>
+                <h2 class="patrick-hand-regular">Lage</h2>
                 <div class="row bg-body p-md-4 p-3">
                     <div class="col-md-6">
                             <div class="col-12 map-container info d-flex align-items-center justify-content-center">
@@ -143,14 +189,14 @@
                             
                     </div>
                     <div class="col-md-6 p-xl-5">
-                        <h3>Golden Tulip Miedzyzdroje Residence</h3>
-                        <strong>Adresse</strong>
+                        <h3>Residence</h3>
+                        <strong>Adresse:</strong>
                         <p class="my-0">Gryfa Pomorskiego 79</p>
-                        <p>72-500 Miedzyzdroje, Polska</p>
+                        <p>72-500 Misdroy, Polen</p>
                         <ul>
                             <li>Die Hotelanlage liegt in einer ruhigen Umgebung, den Strand erreicht man nach ca. 5 Minuten. (500 m)</li>
                             <li>Strandpromenade 5 Minuten entfernt</li>
-                            <li>Das Zentrum von Miedzyzdroje etwa 1 km</li>
+                            <li>Das Zentrum von Misdroy etwa 1 km</li>
                         </ul>
                     </div>
                 </div>
@@ -159,13 +205,19 @@
 
         <section>
             <div id="contact" class="container my-2">
-                <h2>Kontakt</h2>
-                <div class="row bg-light p-md-4 p-3">
+                <h2 class="patrick-hand-regular">Kontakt</h2>
+                <div class="row bg-blue-light p-md-4 p-3">
                     <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-                        <div class="col-12 bg-success-subtle info px-5">
-                            <h3 class="mt-lg-5">Syld Haria Sp.z.o.o.</h3>
-                            <p>Eine Frage haben? Schreiben Sie uns eine E-Mail oder nutzen Sie das Kontaktformular</p>
-                            <p class="py-0 py-lg-3"><strong>E-mail: </strong>ostseeurlaub-syld-haria-apartments@gmx.net</p>
+                        <div class="col-12 bg-blue-subtle info px-4">
+                            <h3 class="mt-3 mt-xxl-5">Syld Haria</h3>
+                            <p>Haben Sie eine Frage? Schreiben Sie uns eine E-Mail oder nutzen Sie das Kontaktformular</p>
+                            <strong>E-Mail-Adresse:</strong>
+                            <p class="pt-1 contact-p">ostseeurlaub-syld-haria-apartments@gmx.net</p>
+                            <strong>Telefonnummer:</strong>
+                            <p class="pt-1 pb-0 contact-p">+49 36927 91827</p>
+                            <p class="pt-0 contact-p">+49 36927 90644</p>
+                            <strong>Mobil:</strong>
+                            <p class="py-1 contact-p">+48 797 837 591</p>
                         </div>
                     </div>
                     
@@ -183,7 +235,7 @@
                               <p><span class="red">*</span> - Pflichtfeld</p>
                             </div>
     
-                            <button class="btn btn-success w-100 mt-3" type="submit">Nachricht senden</button>
+                            <button class="btn btn-blue w-100 mt-3" type="submit">Nachricht senden</button>
                         </form>
                     </div>
                 </div>
@@ -192,7 +244,7 @@
 
         <section>
             <div id="policy" class="container my-2">
-                <h2>Impressum</h2>
+                <h2 class="patrick-hand-regular">Impressum</h2>
                 <div class="row bg-body p-md-4 p-3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue mauris eu nunc posuere, ac porta lectus tincidunt. Aenean aliquam nunc consectetur nisi convallis, vel euismod ex vestibulum. Fusce est urna, dictum et rutrum at, finibus sed tellus. Mauris auctor justo sit amet dictum aliquet. Aenean a tincidunt mi, sed porttitor justo. Integer maximus posuere mi eu consequat. Vivamus dapibus cursus tellus, vitae rutrum turpis interdum a. Nullam viverra elementum dolor, at condimentum eros iaculis non. Nulla auctor augue sapien, non lacinia metus consequat nec. Vivamus a urna sed justo dignissim tristique. Quisque eu vestibulum tellus. Pellentesque velit ante, fringilla vitae mi at, aliquet fermentum lacus. Nam commodo elementum justo, sit amet pellentesque neque blandit eget. Etiam dictum massa non tortor varius lacinia.</p>
                     <p>Aenean lobortis neque id turpis placerat condimentum. Pellentesque auctor lobortis arcu et facilisis. Suspendisse ullamcorper volutpat nunc, ut elementum metus vehicula vitae. Nulla molestie faucibus erat et sodales. Nunc sed tristique nunc. Aenean tincidunt porttitor arcu, a malesuada turpis gravida eget. Praesent consequat semper libero, vel convallis lacus euismod in.</p>
@@ -207,37 +259,41 @@
 
     <footer>
         <section>
-            <div class="container bg-success-subtle footer-big border-top border-success">
+            <div class="container bg-blue-subtle footer-big border-top border-blue">
                 <div class="row mx-5 p-3">
-                    <div class="col-md-6 col-lg-4 offset-lg-2">
-                        <strong>Golden Tulip</strong>
-                        <ul>
-                            <li>Check-In ab 15.00 Uhr</li>
-                            <li>Check-Out bis 11.00 Uhr</li>
-                        </ul>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <strong>Syld Haria Sp.z.o.o.</strong>
-                        <ul>
-                            <li>
-                                <a class="nav-link" href="#policy" onclick="scrollToContent(event, 'policy')">Impressum</a>
+                    <div class="col-12 col-lg-9 col-xl-8 offset-xl-1">
+                        <h5><strong>Kontakt:</strong></h5>
+                        <ul class="contact-footer">
+                            <li class="mb-3">
+                                <p class="mb-0"><strong>Geschäftsführer Harald Schmidt</strong></p>
+                                <p class="mb-0">Mobil: +49 175 533 0364</p>
                             </li>
+                            <li class="mb-3">
+                                <p class="mb-0"><strong>Event Manager Sylvia Schmidt</strong></p>
+                                <p class="mb-0">Mobil: +49 170 341 7188</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="mb-0">Tel.: &nbsp;&nbsp;&nbsp;+49 36927 91827</p>
+                                <p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+49 36927 90644</p>
+                            </li>
+                            <li>Mobil: +48 797 837 591</li>
+                            <li>E-Mail-Adresse: ostseeurlaub-syld-haria-apartments@gmx.net</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h5><strong>Syld Haria Sp. z o.o.</strong></h5>
+                        <p class="mb-0">ul. 1 Maja 38/39 bud. A</p>
+                        <p class="mb-0">71-627 Szczecin</p>
+                        <p class="mb-0">Polska</p>
                         </ul>
                     </div>
                 </div>
     
-                <div class="row mx-5 p-3">
-                    <div class="col-12 col-lg-10 offset-lg-2">
-                        <strong>Kontakt:</strong>
-                        <ul>
-                            <li>E-Mail: ostseeurlaub-syld-haria-apartments@gmx.net</li>
-                        </ul>
-                    </div>
-                </div>
+                
     
-                <div class="d-flex flex-column flex-sm-row justify-content-center py-2 mt-2 border-top border-success">
-                    <p>&copy; 2024 Syld Haria Sp.z.o.o. Alle Rechte vorbehalten.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center py-2 mt-2 border-top border-blue">
+                    <p>&copy; 2024 Syld Haria Sp. z o.o. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </section>
@@ -277,7 +333,7 @@
         }
 
         function onScroll() {
-            const sections = ['description', 'rooms', 'wellness', 'location', 'contact', 'policy'];
+            const sections = ['description', 'rooms', 'wellness', 'meals', 'beach', 'location', 'contact', 'policy'];
             const offset = 80;
 
             sections.forEach(id => {
