@@ -23,10 +23,11 @@
   </head>
   <body>
     <header>
+        <div class="container-fluid bg-blue-light fixed-top logo-div">
+            <img class="img-fluid logo" src="img/logo.png" alt="">
+            <p class="shadows-into-light-regular">Ferienwohnungen in Misdroy</p>
+        </div>
         <nav class="navbar navbar-expand-md navbar-dark bg-blue fixed-top">   
-            <a class="navbar-brand" href="#">
-                <img class="img-fluid logo" src="img/logo.png" alt="">
-            </a>
             <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> 
@@ -65,45 +66,49 @@
 
     <main>
         <section>
-            <div id="description" class="container mt-5 mb-2">
+            <div id="description" class="container mb-2">
                 <h2 class="pt-3 pb-1 shadows-into-light-regular">Beschreibung</h2>
-                <div class="row bg-blue-light p-md-4 p-3 rounded-3">
-                    <div class="col-12 text-body justify-content-center">
-                        <img src="img/tulip2.jpg" alt="hotel" class="img-fluid float-start me-md-3 mb-3">
-                    
+                <div class="row bg-blue-light p-md-4 p-3 g-2">
+                    <div class="col-md-8">
+                        <img src="img/tulip2.jpg" alt="Large Image" class="large-image">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-container">
+                            <img src="img/tulip3.jpg" alt="Small Image 1" class="small-image">
+                            <img src="img/tulip4.jpg" alt="Small Image 2" class="small-image">
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
                         <p>Die Hotelanlage liegt ca. 5 Minuten Fußweg vom Strand entfernt. Ferienwohnung und Studios bieten unseren Gästen genau den Komfort den sie für ihren Aufenthalt wünschen. Wie großzügiger Wohnbereiche, mit seperaten Schlafzimmer, Küchenzeile, Bad, einschließlich mit Balkon.</p>
 
                         <p>Im Restaurant können Sie mit einem perfekt angerichteten Frühstücksbuffet in den Tag starten und Abends sich mit leckeren Speisen verwöhnen lassen. Für Entspannung bietet das Spa. moderne Behandlungsräume für Beautyanwendungen und Massagen, Dampf- und Trockensauna, ein Schwimmbad mit Whirlpool und Fitnessraum. Parken können Sie direkt an der Hotelanlage oder Tiefgarage. (kostenpflichtig)</p>
                     </div>
-
-                    <div class="col-12">
-                        <div class="row ">
-                            <div class="col-md-4">
-                                <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
-                                    <p><strong>Check-Out</strong> bis 11.00 Uhr</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
-                                    <p><strong>Check-In</strong> ab 15.00 Uhr</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
-                                    <p>Hunde können kostenpflichtig mitreisen</p>
-                                </div>
-                            </div>
+                
+                    <div class="col-md-4">
+                        <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
+                            <p><strong>Check-Out</strong> bis 11.00 Uhr</p>
                         </div>
                     </div>
+
+                    <div class="col-md-4">
+                        <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
+                            <p><strong>Check-In</strong> ab 15.00 Uhr</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
+                            <p>Hunde können kostenpflichtig mitreisen</p>
+                        </div>
+                    </div>
+                
                     <div class="col-12" style="height: 10px;"></div>
                     <div class="col-12">
                         <div class="col-12 bg-blue-subtle info d-flex align-items-center justify-content-center">
                             <p><strong>E-Mail: </strong>ostseeurlaub-syld-haria-apartments@gmx.net</p>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -112,27 +117,40 @@
             <div id="rooms" class="container my-2">
                 <h2 class="shadows-into-light-regular">Zimmer</h2>
                 <div class="row bg-body p-md-4 p-3">
-                    <div class="col-md-7 col-lg-8">
-                        <div class="row">
-                            <img src="img/room.jpg" alt="hotel" class="img-fluid mx-5 my-2">
-                            <img src="img/room.jpg" alt="hotel" class="img-fluid mx-5 my-2">
-                            <img src="img/room.jpg" alt="hotel" class="img-fluid mx-5 my-2">
-                        </div>
-                    </div>
-                    <div class="col-md-4 offset-md-1 col-lg-3">
-                        <div class="col-12 info wellness d-flex align-items-center justify-content-center">
-                            <p>Die komfortablen Apartments sind ca. 45 qm bis 65 qm groß, ausgestattet mit seperatem Schlafzimmer, Wohnbereich mit Balkon, Bad, Küchenzeile, Schlafcouch, TV einschließlich WLAN. Zustellbett möglich, alle Etagen sind mit Lift erreichbar. </p>
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/room1.jpg" alt="Slide 1"></div>
+                                <div class="slide"><img src="img/room2.jpg" alt="Slide 2"></div>
+                                <div class="slide"><img src="img/room3.jpg" alt="Slide 3"></div>
+                                <div class="slide"><img src="img/room4.jpg" alt="Slide 4"></div>
+                                <div class="slide"><img src="img/room5.jpg" alt="Slide 5"></div>
+                            </div>
+                            <div class="slider-controls">
+                                <button id="prevBtn">&#10094;</button>
+                                <button id="nextBtn">&#10095;</button>
+                            </div>
+                            <div class="slider-dots">
+                                <div class="dot" onclick="currentSlide(1)"></div>
+                                <div class="dot" onclick="currentSlide(2)"></div>
+                                <div class="dot" onclick="currentSlide(3)"></div>
+                                <div class="dot" onclick="currentSlide(4)"></div>
+                                <div class="dot" onclick="currentSlide(5)"></div>
+                            </div>
                         </div>
                         
-                    </div>
 
+                    </div>
+                    <div class="col-lg-10 offset-lg-1 pt-3 info wellness">
+                        <p>Die komfortablen Apartments sind ca. 45 qm bis 65 qm groß, ausgestattet mit seperatem Schlafzimmer, Wohnbereich mit Balkon, Bad, Küchenzeile, Schlafcouch, TV einschließlich WLAN. Zustellbett möglich, alle Etagen sind mit Lift erreichbar. </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
             <div id="wellness" class="container my-2">
-                <h2 class="indie-flower-regular">Wellness</h2>
+                <h2 class="shadows-into-light-regular">Wellness</h2>
                 <div class="row bg-blue-light p-md-4 p-3">
                     <div class="col-md-6">
                         <div class="col-12 info wellness d-flex align-items-center justify-content-center">
@@ -148,10 +166,10 @@
 
         <section>
             <div id="meals" class="container my-2">
-                <h2 class="indie-flower-regular">Frühstücksbüfett</h2>
+                <h2 class="shadows-into-light-regular">Frühstücksbüfett</h2>
                 <div class="row p-md-4 p-3">
                     <div class="col-md-6 px-md-5">
-                        <img src="img/wellness.jpg" alt="hotel" class="img-fluid">
+                        <img src="img/restaurant.jpg" alt="hotel" class="img-fluid">
                     </div>
                     <div class="col-md-6">
                         <div class="col-12 info wellness d-flex align-items-center justify-content-center">
@@ -164,7 +182,7 @@
 
         <section>
             <div id="beach" class="container my-2">
-                <h2 class="indie-flower-regular">Strand</h2>
+                <h2 class="shadows-into-light-regular">Strand</h2>
                 <div class="row bg-blue-light p-md-4 p-3">
                     <div class="col-md-6">
                         <div class="col-12 info wellness d-flex align-items-center justify-content-center">
@@ -172,7 +190,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 px-md-5">
-                        <img src="img/wellness.jpg" alt="hotel" class="img-fluid">
+                        <img src="img/beach.jpg" alt="hotel" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -180,7 +198,7 @@
 
         <section>
             <div id="location" class="container my-2">
-                <h2 class="patrick-hand-regular">Lage</h2>
+                <h2 class="shadows-into-light-regular">Lage</h2>
                 <div class="row bg-body p-md-4 p-3">
                     <div class="col-md-6">
                             <div class="col-12 map-container info d-flex align-items-center justify-content-center">
@@ -205,7 +223,7 @@
 
         <section>
             <div id="contact" class="container my-2">
-                <h2 class="patrick-hand-regular">Kontakt</h2>
+                <h2 class="shadows-into-light-regular">Kontakt</h2>
                 <div class="row bg-blue-light p-md-4 p-3">
                     <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                         <div class="col-12 bg-blue-subtle info px-4">
@@ -244,7 +262,7 @@
 
         <section>
             <div id="policy" class="container my-2">
-                <h2 class="patrick-hand-regular">Impressum</h2>
+                <h2 class="shadows-into-light-regular">Impressum</h2>
                 <div class="row bg-body p-md-4 p-3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue mauris eu nunc posuere, ac porta lectus tincidunt. Aenean aliquam nunc consectetur nisi convallis, vel euismod ex vestibulum. Fusce est urna, dictum et rutrum at, finibus sed tellus. Mauris auctor justo sit amet dictum aliquet. Aenean a tincidunt mi, sed porttitor justo. Integer maximus posuere mi eu consequat. Vivamus dapibus cursus tellus, vitae rutrum turpis interdum a. Nullam viverra elementum dolor, at condimentum eros iaculis non. Nulla auctor augue sapien, non lacinia metus consequat nec. Vivamus a urna sed justo dignissim tristique. Quisque eu vestibulum tellus. Pellentesque velit ante, fringilla vitae mi at, aliquet fermentum lacus. Nam commodo elementum justo, sit amet pellentesque neque blandit eget. Etiam dictum massa non tortor varius lacinia.</p>
                     <p>Aenean lobortis neque id turpis placerat condimentum. Pellentesque auctor lobortis arcu et facilisis. Suspendisse ullamcorper volutpat nunc, ut elementum metus vehicula vitae. Nulla molestie faucibus erat et sodales. Nunc sed tristique nunc. Aenean tincidunt porttitor arcu, a malesuada turpis gravida eget. Praesent consequat semper libero, vel convallis lacus euismod in.</p>
@@ -302,14 +320,17 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     
     <script>
         function scrollToContent(event, id) {
-            event.preventDefault(); // Zapobiega domyślnemu działaniu linku
+            event.preventDefault();
 
             const element = document.getElementById(id);
-            const offset = -15; // Ustalona liczba pikseli do przesunięcia w górę
+            const offset = -15;
             const bodyRect = document.body.getBoundingClientRect().top;
             const elementRect = element.getBoundingClientRect().top;
             const elementPosition = elementRect - bodyRect;
@@ -317,7 +338,7 @@
 
             window.scrollTo({
                 top: offsetPosition,
-                behavior: 'smooth' // Płynne przewijanie
+                behavior: 'smooth'
             });
         }
 
@@ -334,7 +355,7 @@
 
         function onScroll() {
             const sections = ['description', 'rooms', 'wellness', 'meals', 'beach', 'location', 'contact', 'policy'];
-            const offset = 80;
+            const offset = 165;
 
             sections.forEach(id => {
                 const element = document.getElementById(id);
@@ -347,5 +368,7 @@
 
         window.addEventListener('scroll', onScroll);
     </script>
+
+    <script src="js/slider.js"></script>
   </body>
 </html>
