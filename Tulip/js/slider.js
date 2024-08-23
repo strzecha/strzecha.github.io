@@ -1,44 +1,52 @@
-let slideIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        const totalSlides = slides.length;
-        let slideInterval;
+class Slider {
+    constructor(sliderElement) {
+        this.sliderElement = sliderElement;
+        this.slideIndex = 0;
+        this.slides = sliderElement.querySelectorAll('.slide');
+        this.dots = sliderElement.querySelectorAll('.dot');
+        this.totalSlides = this.slides.length;
+        this.slideInterval = setInterval(() => this.nextSlide(), 5000);
 
-        const showSlides = () => {
-            if (slideIndex >= totalSlides) slideIndex = 0;
-            if (slideIndex < 0) slideIndex = totalSlides - 1;
-            
-            document.querySelector('.slider-wrapper').style.transform = `translateX(${-slideIndex * 100}%)`;
-            
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[slideIndex].classList.add('active');
-        }
+        sliderElement.querySelector('.nextBtn').addEventListener('click', () => this.nextSlide());
+        sliderElement.querySelector('.prevBtn').addEventListener('click', () => this.prevSlide());
 
-        const nextSlide = () => {
-            slideIndex++;
-            showSlides();
-            resetInterval();
-        }
+        this.showSlides();
+    }
 
-        const prevSlide = () => {
-            slideIndex--;
-            showSlides();
-            resetInterval();
-        }
+    showSlides() {
+        if (this.slideIndex >= this.totalSlides) this.slideIndex = 0;
+        if (this.slideIndex < 0) this.slideIndex = this.totalSlides - 1;
 
-        const currentSlide = (n) => {
-            slideIndex = n - 1;
-            showSlides();
-            resetInterval();
-        }
+        this.sliderElement.querySelector('.slider-wrapper').style.transform = `translateX(${-this.slideIndex * 100}%)`;
 
-        const resetInterval = () => {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(nextSlide, 3000);
-        }
+        this.dots.forEach(dot => dot.classList.remove('active'));
+        this.dots[this.slideIndex].classList.add('active');
+    }
 
-        document.getElementById('nextBtn').addEventListener('click', nextSlide);
-        document.getElementById('prevBtn').addEventListener('click', prevSlide);
+    nextSlide() {
+        this.slideIndex++;
+        this.showSlides();
+        this.resetInterval();
+    }
 
-        slideInterval = setInterval(nextSlide, 5000);
-        showSlides();
+    prevSlide() {
+        this.slideIndex--;
+        this.showSlides();
+        this.resetInterval();
+    }
+
+    currentSlide(n) {
+        this.slideIndex = n - 1;
+        this.showSlides();
+        this.resetInterval();
+    }
+
+    resetInterval() {
+        clearInterval(this.slideInterval);
+        this.slideInterval = setInterval(() => this.nextSlide(), 5000);
+    }
+}
+
+// Inicjalizacja sliderów
+const slider1 = new Slider(document.getElementById('slider1'));
+const slider2 = new Slider(document.getElementById('slider2'));

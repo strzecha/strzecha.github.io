@@ -41,10 +41,13 @@
                     <a id="nav-rooms" class="nav-link" href="#rooms" onclick="scrollToContent(event, 'rooms')">Zimmer</a>
                   </li>
                   <li class="nav-item">
-                    <a id="nav-wellness" class="nav-link" href="#wellness" onclick="scrollToContent(event, 'wellness')">Wellness</a>
+                    <a id="nav-meals" class="nav-link" href="#meals" onclick="scrollToContent(event, 'meals')">Frühstücksbüfett</a>
                   </li>
                   <li class="nav-item">
-                    <a id="nav-meals" class="nav-link" href="#meals" onclick="scrollToContent(event, 'meals')">Frühstücksbüfett</a>
+                    <a id="nav-restaurant" class="nav-link" href="#restaurant" onclick="scrollToContent(event, 'restaurant')">Restaurant</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="nav-wellness" class="nav-link" href="#wellness" onclick="scrollToContent(event, 'wellness')">Wellness</a>
                   </li>
                   <li class="nav-item">
                     <a id="nav-beach" class="nav-link" href="#beach" onclick="scrollToContent(event, 'beach')">Strand</a>
@@ -118,7 +121,7 @@
                 <h2 class="shadows-into-light-regular">Zimmer</h2>
                 <div class="row bg-body p-md-4 p-3">
                     <div class="col-lg-8 offset-lg-2">
-                        <div class="slider">
+                        <div id="slider1" class="slider">
                             <div class="slider-wrapper">
                                 <div class="slide"><img src="img/room1.jpg" alt="Slide 1"></div>
                                 <div class="slide"><img src="img/room2.jpg" alt="Slide 2"></div>
@@ -127,38 +130,20 @@
                                 <div class="slide"><img src="img/room5.jpg" alt="Slide 5"></div>
                             </div>
                             <div class="slider-controls">
-                                <button id="prevBtn">&#10094;</button>
-                                <button id="nextBtn">&#10095;</button>
+                                <button class="prevBtn">&#10094;</button>
+                                <button class="nextBtn">&#10095;</button>
                             </div>
                             <div class="slider-dots">
-                                <div class="dot" onclick="currentSlide(1)"></div>
-                                <div class="dot" onclick="currentSlide(2)"></div>
-                                <div class="dot" onclick="currentSlide(3)"></div>
-                                <div class="dot" onclick="currentSlide(4)"></div>
-                                <div class="dot" onclick="currentSlide(5)"></div>
+                                <div class="dot" onclick="slider1.currentSlide(1)"></div>
+                                <div class="dot" onclick="slider1.currentSlide(2)"></div>
+                                <div class="dot" onclick="slider1.currentSlide(3)"></div>
+                                <div class="dot" onclick="slider1.currentSlide(4)"></div>
+                                <div class="dot" onclick="slider1.currentSlide(5)"></div>
                             </div>
                         </div>
-                        
-
                     </div>
                     <div class="col-lg-10 offset-lg-1 pt-3 info wellness">
                         <p>Die komfortablen Apartments sind ca. 45 qm bis 65 qm groß, ausgestattet mit seperatem Schlafzimmer, Wohnbereich mit Balkon, Bad, Küchenzeile, Schlafcouch, TV einschließlich WLAN. Zustellbett möglich, alle Etagen sind mit Lift erreichbar. </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div id="wellness" class="container my-2">
-                <h2 class="shadows-into-light-regular">Wellness</h2>
-                <div class="row bg-blue-light p-md-4 p-3">
-                    <div class="col-md-6">
-                        <div class="col-12 info wellness d-flex align-items-center justify-content-center">
-                            <p>Dampf- und Trockensauna, Schwimmbad mit Whirlpool und Entspannungsräume. Billard, Tischtennis und Fitnessraum</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-md-5">
-                        <img src="img/wellness.jpg" alt="hotel" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -169,13 +154,55 @@
                 <h2 class="shadows-into-light-regular">Frühstücksbüfett</h2>
                 <div class="row p-md-4 p-3">
                     <div class="col-md-6 px-md-5">
+                        <img src="img/buffet1.jpg" alt="hotel" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 px-md-5">
+                        <img src="img/buffet2.jpg" alt="hotel" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="restaurant" class="container my-2">
+                <h2 class="shadows-into-light-regular">Restaurant</h2>
+                <div class="row p-md-4 p-3">
+                    <div class="col-lg-8 offset-lg-2">
                         <img src="img/restaurant.jpg" alt="hotel" class="img-fluid">
                     </div>
-                    <div class="col-md-6">
-                        <div class="col-12 info wellness d-flex align-items-center justify-content-center">
-                            <p>Dampf- und Trockensauna, Schwimmbad mit Whirlpool und Entspannungsräume. Billard, Tischtennis und Fitnessraum</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="wellness" class="container my-2">
+                <h2 class="shadows-into-light-regular">Wellness</h2>
+                <div class="row bg-blue-light p-md-4 p-3">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div id="slider2" class="slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/spa1.jpg" alt="Slide 1"></div>
+                                <div class="slide"><img src="img/spa2.jpg" alt="Slide 2"></div>
+                                <div class="slide"><img src="img/spa3.jpg" alt="Slide 3"></div>
+                                <div class="slide"><img src="img/spa4.jpg" alt="Slide 4"></div>
+                            </div>
+                            <div class="slider-controls">
+                                <button class="prevBtn">&#10094;</button>
+                                <button class="nextBtn">&#10095;</button>
+                            </div>
+                            <div class="slider-dots">
+                                <div class="dot" onclick="slider2.currentSlide(1)"></div>
+                                <div class="dot" onclick="slider2.currentSlide(2)"></div>
+                                <div class="dot" onclick="slider2.currentSlide(3)"></div>
+                                <div class="dot" onclick="slider2.currentSlide(4)"></div>
+                            </div>
                         </div>
-                    </div>  
+                    </div>
+                    
+                    
+                    <div class="col-lg-10 offset-lg-1 pt-3 info wellness">
+                        <p>Dampf- und Trockensauna, Schwimmbad mit Whirlpool und Entspannungsräume. Billard, Tischtennis und Fitnessraum</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -186,7 +213,7 @@
                 <div class="row bg-blue-light p-md-4 p-3">
                     <div class="col-md-6">
                         <div class="col-12 info wellness d-flex align-items-center justify-content-center">
-                            <p>Dampf- und Trockensauna, Schwimmbad mit Whirlpool und Entspannungsräume. Billard, Tischtennis und Fitnessraum</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue mauris eu nunc posuere, ac porta lectus tincidunt. Aenean aliquam nunc consectetur nisi convallis, vel euismod ex vestibulum. Fusce est urna, dictum et rutrum at, finibus sed tellus. </p>
                         </div>
                     </div>
                     <div class="col-md-6 px-md-5">
@@ -212,9 +239,8 @@
                         <p class="my-0">Gryfa Pomorskiego 79</p>
                         <p>72-500 Misdroy, Polen</p>
                         <ul>
-                            <li>Die Hotelanlage liegt in einer ruhigen Umgebung, den Strand erreicht man nach ca. 5 Minuten. (500 m)</li>
-                            <li>Strandpromenade 5 Minuten entfernt</li>
-                            <li>Das Zentrum von Misdroy etwa 1 km</li>
+                            <li>Die Hotelanlage liegt in einer ruhigen Umgebung, den Strand erreicht man nach ca. 5 Minuten (500 m)</li>
+                            <li>Das Zentrum von Misdroy liegt ca. 1km vom Hotel entfernt</li>
                         </ul>
                     </div>
                 </div>
@@ -354,7 +380,7 @@
         }
 
         function onScroll() {
-            const sections = ['description', 'rooms', 'wellness', 'meals', 'beach', 'location', 'contact', 'policy'];
+            const sections = ['description', 'rooms', 'meals', 'restaurant', 'wellness', 'beach', 'location', 'contact', 'policy'];
             const offset = 165;
 
             sections.forEach(id => {
