@@ -153,11 +153,11 @@
             <div id="meals" class="container my-2">
                 <h2 class="shadows-into-light-regular">Frühstücksbüfett</h2>
                 <div class="row p-md-4 p-3">
-                    <div class="col-md-6 px-md-5">
-                        <img src="img/buffet1.jpg" alt="hotel" class="img-fluid">
+                    <div class="col-md-6 px-md-5 fade-in">
+                        <img src="img/buffet1.jpg" alt="hotel" class="img-fluid" loading="lazy">
                     </div>
-                    <div class="col-md-6 px-md-5">
-                        <img src="img/buffet2.jpg" alt="hotel" class="img-fluid">
+                    <div class="col-md-6 px-md-5 fade-in">
+                        <img src="img/buffet2.jpg" alt="hotel" class="img-fluid" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -360,7 +360,7 @@
                 
     
                 <div class="d-flex flex-column flex-sm-row justify-content-center py-2 mt-2 border-top border-blue">
-                    <p>&copy; 2024 Syld Haria Sp. z o.o. Alle Rechte vorbehalten.</p>
+                    <p>&copy; 2025 Syld Haria Sp. z o.o. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </section>
@@ -416,6 +416,19 @@
         }
 
         window.addEventListener('scroll', onScroll);
+
+
+
+          const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 
     <script src="js/slider.js"></script>
