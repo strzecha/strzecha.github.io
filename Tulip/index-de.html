@@ -153,10 +153,10 @@
             <div id="meals" class="container my-2">
                 <h2 class="shadows-into-light-regular">Frühstücksbüfett</h2>
                 <div class="row p-md-4 p-3">
-                    <div class="col-md-6 px-md-5 fade-in">
+                    <div class="col-md-6 px-md-5 image-wrapper">
                         <img src="img/buffet1.jpg" alt="hotel" class="img-fluid" loading="lazy">
                     </div>
-                    <div class="col-md-6 px-md-5 fade-in">
+                    <div class="col-md-6 px-md-5 image-wrapper">
                         <img src="img/buffet2.jpg" alt="hotel" class="img-fluid" loading="lazy">
                     </div>
                 </div>
@@ -419,16 +419,21 @@
 
 
 
-          const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-                });
-            }, { threshold: 0.1 });
+          // IntersectionObserver dla animacji fade-in
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+            }
+        });
+        }, {
+        threshold: 0.1
+        });
 
-            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        document.querySelectorAll('.gallery-image-wrapper').forEach(el => {
+        observer.observe(el);
+        });
     </script>
 
     <script src="js/slider.js"></script>
