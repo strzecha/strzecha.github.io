@@ -42,7 +42,7 @@ p, li
     top: 0;
 }
 
-#description p
+#description p, #zimmer p, #wellness p
 {
     text-align: justify;
 }
