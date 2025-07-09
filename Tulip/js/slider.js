@@ -50,3 +50,4 @@ class Slider {
 // Inicjalizacja sliderów
 const slider1 = new Slider(document.getElementById('slider1'));
 const slider2 = new Slider(document.getElementById('slider2'));
+const slider3 = new Slider(document.getElementById('slider3'));

@@ -56,10 +56,7 @@
                     <a id="nav-location" class="nav-link" href="#location" onclick="scrollToContent(event, 'location')">Lage</a>
                   </li>
                   <li class="nav-item">
-                    <a id="nav-contact" class="nav-link" href="#contact" onclick="scrollToContent(event, 'contact')">Kontakt</a>
-                  </li>
-                  <li class="nav-item">
-                    <a id="nav-policy" class="nav-link" href="#policy" onclick="scrollToContent(event, 'policy')">Impressum</a>
+                    <a id="nav-contact" class="nav-link" href="#contact" onclick="scrollToContent(event, 'contact')">Kontakt/Buchen</a>
                   </li>
                 </ul>
               </div>
@@ -147,10 +144,10 @@
                 <h2 class="shadows-into-light-regular">Frühstücksbüfett</h2>
                 <div class="row bg-blue-light p-md-4 p-3">
                     <div class="col-md-6 px-md-5">
-                        <img src="img/buffet1.jpg" alt="hotel" class="img-fluid" loading="lazy">
+                        <img src="img/buffet1.jpg" alt="hotel" class="img-fluid">
                     </div>
                     <div class="col-md-6 px-md-5">
-                        <img src="img/buffet2.jpg" alt="hotel" class="img-fluid" loading="lazy">
+                        <img src="img/buffet2.jpg" alt="hotel" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -210,7 +207,7 @@
         <section>
             <div id="beach" class="container my-2 image-wrapper">
                 <h2 class="shadows-into-light-regular">Strand</h2>
-                <div class="bg-body p-md-4 p-3">
+                <div class="bg-body">
                     <div class="col-md-7">
                         <img src="img/beach.jpg" alt="hotel" class="img-fluid">
                     </div>
@@ -267,7 +264,7 @@
                 <div class="row bg-body p-md-4 p-3">
                     <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                         <div class="col-12 bg-blue-subtle info px-4">
-                            <h3 class="mt-3 mt-xxl-5">Syld Haria</h3>
+                            <h3 class="mt-3 mt-xxl-5"><strong>Syld Haria</strong></h3>
                             <p>Haben Sie eine Frage?<br>Schreiben Sie uns eine E-Mail oder<br>nutzen Sie das Kontaktformular</p>
                             <strong>E-Mail-Adresse:</strong>
                             <p class="pt-1 contact-p">ostseeurlaub-syld-haria-apartments@gmx.net</p>
@@ -305,7 +302,7 @@
         <section>
             <div class="container bg-blue-subtle footer-big border-top border-blue">
                 <div class="row mx-5 p-3">
-                    <div class="col-lg-9 col-xl-8 offset-xl-1">
+                    <div class="col-lg-8 col-xl-7 offset-xl-1">
                         <h5><strong>Kontakt:</strong></h5>
                         <ul class="contact-footer">
                             <li class="mb-3">
@@ -316,7 +313,7 @@
                                 <p class="mb-0"><strong>Event Manager Sylvia Schmidt</strong></p>
                                 <p class="mb-0">Mobil: +49 170 341 7188</p>
                             </li>
-                            <li class="mb-3">
+                            <li class="mb-4">
                                 <p class="mb-0">Tel.: &nbsp;&nbsp;&nbsp;+49 36927 91827</p>
                             </li>
                             <li>Mobil: +48 797 837 591</li>
@@ -327,7 +324,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <h5><strong>Firmensitz:</strong></h5>
                         <p class="mb-0">Syld Haria Sp. z o.o.</p>
                         <p class="mb-0">vertreten durch: Geschäftsführer Harald Schmidt</p>
@@ -335,25 +332,26 @@
                         <p class="mb-0">71-627 Szczecin</p>
                         <p class="mb-0">Polen</p>
                         </ul>
-                    </div>
+                    </div>    
+                </div>
 
+                <div class="row mx-5 p-3">
                     <div class="col-sm-11 offset-sm-1">
-                        <h3>Haftungsausschluss</h3>
+                        <h5>Haftungsausschluss</h5>
                         <p><strong>Haftung für Inhalte:</strong> Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
                         
                         <p><strong>Haftung für Links:</strong> Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
 
-                        <h3>Datenschutz</h3>
+                        <h5>Datenschutz</h5>
                         <p>Informationen zum Datenschutz finden Sie in unserer <a href="/datenschutz">Datenschutzerklärung</a>.</p>
-                    </div>
                     </div>
                 </div>
     
 
 
-                <div class="d-flex flex-column flex-sm-row justify-content-center py-2 mt-2 border-top border-blue">
-                    <p>&copy; 2025 Syld Haria Sp. z o.o. Alle Rechte vorbehalten.</p>
-                </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-center py-2 mt-2 border-top border-blue">
+                <p>&copy; 2025 Syld Haria Sp. z o.o. Alle Rechte vorbehalten.</p>
+            </div>
             </div>
         </section>
         
@@ -395,7 +393,7 @@
         }
 
         function onScroll() {
-            const sections = ['description', 'rooms', 'meals', 'restaurant', 'wellness', 'beach', 'location', 'contact', 'policy'];
+            const sections = ['description', 'rooms', 'meals', 'restaurant', 'wellness', 'beach', 'location', 'contact'];
             const offset = 165;
 
             sections.forEach(id => {
