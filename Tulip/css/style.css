@@ -83,6 +83,7 @@ img, iframe
 .wellness > p
 {
     font-size: 18px;
+    text-align: justify;
 }
 
 .form-control, .form-label
@@ -143,7 +144,9 @@ p.contact-p
 
 .contact-footer
 {
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 
@@ -274,4 +277,15 @@ p.contact-p
 .image-wrapper.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.label {
+    display: inline-block;
+    min-width: 150px; /* szerokość etykiety */
+    font-weight: bold;
+}
+
+.invisible-label {
+    visibility: hidden;
+    min-width: 150px;
 }
