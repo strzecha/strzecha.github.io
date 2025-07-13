@@ -288,3 +288,17 @@ p.contact-p
     visibility: hidden;
     min-width: 150px;
 }
+
+.polish-flag-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.polish-flag {
+    height: 28px;
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
