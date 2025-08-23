@@ -297,3 +297,8 @@ p.contact-p
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
+.link {
+    color: #ffffed;
+    font-style: italic;
+}
