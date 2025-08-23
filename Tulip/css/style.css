@@ -302,3 +302,7 @@ p.contact-p
     color: #ffffed;
     font-style: italic;
 }
+
+#policy {
+    margin-top: 50px !important;
+}
